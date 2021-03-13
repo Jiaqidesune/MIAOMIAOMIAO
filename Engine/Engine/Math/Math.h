@@ -82,7 +82,7 @@ namespace math
 
 	static float SRand();
 
-	static float Atan2(float y, float x);
+	float Atan2(float y, float x);
 
 	static inline float FloatSelect(float comparand, float valueGEZero, float valueLTZero)
 	{

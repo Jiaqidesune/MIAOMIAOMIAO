@@ -149,10 +149,20 @@
   <ItemGroup>
     <ClCompile Include="bvh\Bvh.cpp" />
     <ClCompile Include="bvh\SplitBvh.cpp" />
+    <ClCompile Include="Core\Camera.cpp" />
+    <ClCompile Include="Core\Mesh.cpp" />
+    <ClCompile Include="Core\Program.cpp" />
+    <ClCompile Include="Core\Quad.cpp" />
+    <ClCompile Include="Graphics\GfxTexture.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Math\Math.cpp" />
-    <ClCompile Include="OpenGL\Shader.cpp" />
-    <ClCompile Include="OpenGL\Texture.cpp" />
+    <ClCompile Include="Core\Shader.cpp" />
+    <ClCompile Include="Core\Texture.cpp" />
+    <ClCompile Include="Thread\RunnableThread.cpp" />
+    <ClCompile Include="Thread\TaskThread.cpp" />
+    <ClCompile Include="Thread\TaskThreadPool.cpp" />
+    <ClCompile Include="Thread\ThreadEvent.cpp" />
+    <ClCompile Include="Thread\ThreadManager.cpp" />
     <ClCompile Include="vendor\imguizmo\ImGuizmo.cpp" />
     <ClCompile Include="vendor\imgui\imgui.cpp" />
     <ClCompile Include="vendor\imgui\imgui_demo.cpp" />
@@ -165,6 +175,14 @@
   <ItemGroup>
     <ClInclude Include="bvh\Bvh.h" />
     <ClInclude Include="bvh\SplitBvh.h" />
+    <ClInclude Include="Core\Camera.h" />
+    <ClInclude Include="Core\Light.h" />
+    <ClInclude Include="Core\Material.h" />
+    <ClInclude Include="Core\Mesh.h" />
+    <ClInclude Include="Core\Program.h" />
+    <ClInclude Include="Core\Quad.h" />
+    <ClInclude Include="Core\ShaderInclude.h" />
+    <ClInclude Include="Graphics\GfxTexture.h" />
     <ClInclude Include="Math\Axis.h" />
     <ClInclude Include="Math\Bounds3D.h" />
     <ClInclude Include="Math\Math.h" />
@@ -173,8 +191,15 @@
     <ClInclude Include="Math\Vector2.h" />
     <ClInclude Include="Math\Vector3.h" />
     <ClInclude Include="Math\Vector4.h" />
-    <ClInclude Include="OpenGL\Shader.h" />
-    <ClInclude Include="OpenGL\Texture.h" />
+    <ClInclude Include="Core\Shader.h" />
+    <ClInclude Include="Core\Texture.h" />
+    <ClInclude Include="Thread\Runnable.h" />
+    <ClInclude Include="Thread\RunnableThread.h" />
+    <ClInclude Include="Thread\TaskThread.h" />
+    <ClInclude Include="Thread\TaskThreadPool.h" />
+    <ClInclude Include="Thread\ThreadEvent.h" />
+    <ClInclude Include="Thread\ThreadManager.h" />
+    <ClInclude Include="Thread\ThreadTask.h" />
     <ClInclude Include="vendor\imguizmo\ImGuizmo.h" />
     <ClInclude Include="vendor\imgui\imconfig.h" />
     <ClInclude Include="vendor\imgui\imgui.h" />

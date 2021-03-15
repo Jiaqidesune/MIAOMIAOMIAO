@@ -9,7 +9,7 @@
 namespace Rendering
 {
 	Program* LoadShaders(const std::string& vertFileName, const std::string& fragFileName);
-	void GenTexture2D(GLuint& target, GLint internalformat, GLenum format, GLenum type, int width, int height, void* data);
+	//void GenTexture2D(GLuint& target, GLint internalformat, GLenum format, GLenum type, int width, int height, void* data);
 
 	struct RenderOptions
 	{
@@ -39,6 +39,39 @@ namespace Rendering
 	class Renderer
 	{
 	public:
+		Renderer(Scene* scene, const std::string& shadersDirectory);
 
+		virtual ~Renderer();
+
+		virtual void Init();
+		virtual void Dispose();
+
+		virtual void Render() = 0;
+		virtual void Update(float secondsElapsed);
+
+		virtual float GetProgress() const = 0;
+		virtual int GetSampleCount() const = 0;
+
+	protected:
+		GfxTexture* bvhTex = nullptr;
+		GfxTexture* aabbMinTex = nullptr;
+		GfxTexture* aabbMaxTex = nullptr;
+		GfxTexture* vertexIndicesTex = nullptr;
+		GfxTexture* verticesTex = nullptr;
+		GfxTexture* normalsTex = nullptr;
+		GfxTexture* materialsTex = nullptr;
+		GfxTexture* transformsTex = nullptr;
+		GfxTexture* lightsTex = nullptr;
+		GfxTexture* textureMapsArrayTex = nullptr;
+		GfxTexture* hdrTex = nullptr;
+		GfxTexture* hdrMarginalDistTex = nullptr;
+		GfxTexture* hdrConditionalDistTex = nullptr;
+
+		bool initialized;
+
+		Scene* scene;
+		Quad* quad;
+		int numOfLights;
+		std::string shadersDirectory;
 	};
 }

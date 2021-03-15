@@ -30,6 +30,7 @@ namespace Rendering
 
 	class Scene
 	{
+	public:
 		Scene();
 
 		~Scene();
@@ -85,7 +86,7 @@ namespace Rendering
 		std::vector<Indices> vertIndices;
 		std::vector<Vector4> verticesUVX;
 		std::vector<Vector4> normalsUVY;
-		std::vector<Matrix4x4> transform;
+		std::vector<Matrix4x4> transforms;
 		// texture size
 		int indicesTexWidth;
 		int triDataTexWidth;

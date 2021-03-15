@@ -156,6 +156,7 @@
     <ClCompile Include="Core\Quad.cpp" />
     <ClCompile Include="Core\Renderer.cpp" />
     <ClCompile Include="Core\Scene.cpp" />
+    <ClCompile Include="Core\TiledRenderer.cpp" />
     <ClCompile Include="Graphics\GfxTexture.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Math\Math.cpp" />
@@ -176,6 +177,7 @@
     <ClCompile Include="vendor\imgui\imgui_impl_opengl3.cpp" />
     <ClCompile Include="vendor\imgui\imgui_stdlib.cpp" />
     <ClCompile Include="vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="vendor\SceneLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bvh\Bvh.h" />
@@ -190,6 +192,7 @@
     <ClInclude Include="Core\Renderer.h" />
     <ClInclude Include="Core\Scene.h" />
     <ClInclude Include="Core\ShaderInclude.h" />
+    <ClInclude Include="Core\TiledRenderer.h" />
     <ClInclude Include="Graphics\GfxTexture.h" />
     <ClInclude Include="Math\Axis.h" />
     <ClInclude Include="Math\Bounds3D.h" />
@@ -221,11 +224,21 @@
     <ClInclude Include="vendor\imgui\imstb_textedit.h" />
     <ClInclude Include="vendor\imgui\imstb_truetype.h" />
     <ClInclude Include="vendor\json.hpp" />
+    <ClInclude Include="vendor\SceneLoader.h" />
     <ClInclude Include="vendor\stb_image.h" />
     <ClInclude Include="vendor\stb_image_resize.h" />
     <ClInclude Include="vendor\stb_image_write.h" />
+    <ClInclude Include="vendor\tinydir.h" />
     <ClInclude Include="vendor\tiny_gltf.h" />
     <ClInclude Include="vendor\tiny_obj_loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common\Accumulation.glsl" />
+    <None Include="common\Output.glsl" />
+    <None Include="common\Progressive.glsl" />
+    <None Include="common\Tiled.glsl" />
+    <None Include="common\TileOutput.glsl" />
+    <None Include="common\Vertex.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

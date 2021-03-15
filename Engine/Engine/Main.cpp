@@ -1,10 +1,26 @@
+#include <time.h>
+#include <math.h>
+#include <string>
+
 #include <iostream>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
-#include "Math/Vector2.h"
-#include "Math/Vector3.h"
-#include "Math/Vector4.h"
+
+
+#include "vendor/imgui/imgui.h"
+#include "vendor/imgui/imgui_impl_glfw.h"
+#include "vendor/imgui/imgui_impl_opengl3.h"
+#include "vendor/imguizmo/ImGuizmo.h"
+
+#include "core/Scene.h"
+#include "core/Renderer.h"
+#include "core/TiledRenderer.h"
+
+#include "vendor/SceneLoader.h"
+#include "vendor/GLBLoader.h"
+#include "vendor/tinydir.h"
+
+using namespace Rendering;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);

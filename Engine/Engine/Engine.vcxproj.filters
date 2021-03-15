@@ -102,6 +102,12 @@
     <ClCompile Include="vendor\GLBLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Core\TiledRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\SceneLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vendor\imgui\imconfig.h">
@@ -248,5 +254,22 @@
     <ClInclude Include="vendor\GLBLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Core\TiledRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\SceneLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\tinydir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common\Vertex.glsl" />
+    <None Include="common\Tiled.glsl" />
+    <None Include="common\Progressive.glsl" />
+    <None Include="common\Accumulation.glsl" />
+    <None Include="common\TileOutput.glsl" />
+    <None Include="common\Output.glsl" />
   </ItemGroup>
 </Project>
